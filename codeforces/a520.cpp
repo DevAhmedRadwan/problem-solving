@@ -4,14 +4,14 @@ int main()
 {
   int n, alpha_count[26] = {0};
   std::cin >> n;
-  char *program = new char[n + 1];
-  std::cin >> program;
+  char *pangram = new char[n + 1];
+  std::cin >> pangram;
   for (int i = 0; i < n; i++)
   {
-    program[i] = tolower(program[i]);
-    alpha_count[(program[i] - 'a')] = 1;
+    pangram[i] = tolower(pangram[i]);
+    alpha_count[(pangram[i] - 'a')] = 1;
   }
-  delete program;
+  delete pangram;
 
   for (int i = 0; i < 26; i++)
   {
@@ -22,5 +22,6 @@ int main()
     }
   }
   std::cout << "YES";
+  delete[] pangram;
   return 0;
 }

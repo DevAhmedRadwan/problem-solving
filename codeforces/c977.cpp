@@ -22,8 +22,8 @@ void merge(int *arr, int s_index, int middle, int e_index)
     else if (b < b_len)
       arr[s_index + i] = b_arr[b++];
   }
-  delete a_arr;
-  delete b_arr;
+  delete[] a_arr;
+  delete[] b_arr;
 }
 
 void merge_sort(int *arr, int s_index, int e_index)
@@ -57,6 +57,6 @@ int main()
     return 0;
   }
   std::cout << -1;
-  delete arr;
+  delete[] arr;
   return 0;
 }

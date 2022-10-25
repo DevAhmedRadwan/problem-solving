@@ -27,6 +27,6 @@ int main()
     }
   }
   std::cout << current[0] << current[1];
-  delete s;
+  delete[] s;
   return 0;
 }

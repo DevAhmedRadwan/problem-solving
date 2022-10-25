@@ -18,5 +18,6 @@ int main()
   seconds += max_index;
   seconds += n - min_index - 1;
   std::cout << seconds;
+  delete[] arr;
   return 0;
 }

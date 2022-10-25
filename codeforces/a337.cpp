@@ -17,5 +17,6 @@ int main()
     max_diff = std::min(max_diff, arr[i + n - 1] - arr[i]);
   }
   std::cout << max_diff;
+  delete[] arr;
   return 0;
 }

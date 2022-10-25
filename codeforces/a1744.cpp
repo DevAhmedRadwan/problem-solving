@@ -23,8 +23,8 @@ void solve()
     }
   }
   std::cout << "YES" << std::endl;
-  delete int_letters;
-  delete char_letters;
+  delete[] int_letters;
+  delete[] char_letters;
   return;
 }
 

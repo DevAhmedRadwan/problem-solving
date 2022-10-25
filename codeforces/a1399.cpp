@@ -28,7 +28,7 @@ int main()
       std::cout << "YES" << std::endl;
     else
       std::cout << "NO" << std::endl;
-    delete a;
+    delete[] a;
   }
   return 0;
 }
