@@ -2,4 +2,5 @@
 !*/
 !.gitignore
 !*.cpp
+!*.js
 !README.md
