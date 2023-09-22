@@ -42,7 +42,7 @@ fn read_line_of_usize(length: usize) -> Vec<usize> {
     let mut vec_numbers: Vec<usize> = Vec::<usize>::with_capacity(length);
     let parts = input_line.split(" ");
     for part in parts {
-        let number: usize = part.trim().parse().expect("Input not an i32");
+        let number: usize = part.trim().parse().expect("Input not an usize");
         vec_numbers.push(number);
     }
     vec_numbers
