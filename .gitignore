@@ -2,6 +2,7 @@
 !*/
 !.gitignore
 !*.cpp
+!*.cs
 !*.rs
 !*.js
 !README.md
